@@ -1,0 +1,23 @@
+.header {
+  margin-top: 45px;
+  max-width: 880px;
+  height: 74px;
+  border: 1px;
+  color: #ffffff;
+  /* margin-left: 200px; */ /* already applied on page__content */
+  border-color: #545454;
+}
+
+.header__logo {
+  width: 173px;
+  height: 33px;
+}
+
+.header__line {
+  margin-top: 119px;
+  max-width: 880px;
+  border: 1px;
+  opacity: 0.7;
+  rotate: 0;
+  border-color: #545454;
+}
