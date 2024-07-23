@@ -91,16 +91,9 @@
 }
 
 /* Styles for screens smaller than 480px */
-
 @media screen and (max-width: 480px) {
-  .header {
-    margin-top: 20px;
-    width: 100%;
-  }
-
   .profile {
     flex-direction: column;
-    background-color: blue;
     padding: 10px;
     width: 100vw;
     margin-top: 40px;
