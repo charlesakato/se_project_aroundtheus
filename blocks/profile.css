@@ -26,10 +26,13 @@
 }
 
 .profile__title {
-  font-size: 42px;
-  line-height: 48px;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 42px;
   font-weight: 500;
   grid-area: title;
+  max-width: 373px;
+  height: 39px;
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
