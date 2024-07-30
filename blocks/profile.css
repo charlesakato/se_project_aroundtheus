@@ -51,14 +51,16 @@
 }
 
 .profile__edit-button {
+  display: flex;
   background: transparent url(../images/Edit\ Button.svg) center no-repeat;
   height: 24px;
   width: 24px;
   grid-area: button;
-  margin: 0 0 0 16px;
-  border-color: white;
-  border-width: 1px;
-  border-style: solid;
+  margin-left: 20px;
+  border: 1px solid #ffffff;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .profile__edit-button:hover {
@@ -76,6 +78,7 @@
   border-color: #ffffff;
   border-width: 2px;
   border-style: solid;
+  padding: 0;
 }
 
 .profile__add-button:hover {
@@ -85,7 +88,6 @@
 }
 
 /*Styles for screens smaller than 775px */
-
 @media screen and (max-width: 775px) {
   .profile {
     margin-top: 40px;
@@ -114,21 +116,28 @@
       "description description";
     grid-template-columns: 1fr auto; /* Ensures title takes available space, button takes auto width */
     align-items: center; /* Vertically aligns items in the center */
-    width: 100%;
+    /* width: 100%; */
     margin-top: 35px;
+    width: 282px;
+    height: 50px;
   }
 
   .profile__title {
     margin-top: 30px;
     line-height: 26.63px;
     font-weight: 400;
-    left: 62px;
+    margin-bottom: 14px;
+    font-size: 22px;
+    text-align: center;
   }
 
   .profile__description {
     width: 100%;
     text-align: center;
     margin-bottom: 4px;
+    width: 196px;
+    height: 22px;
+    font-size: 14px;
   }
 
   .profile__edit-button {
@@ -137,6 +146,7 @@
 
   .profile__add-button {
     margin: 50px 0 0 0;
-    width: 100%;
+    width: 282px;
+    height: 50px;
   }
 }
