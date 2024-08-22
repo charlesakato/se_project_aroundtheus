@@ -9,9 +9,7 @@
   grid-template-areas:
     "title button"
     "description description";
-  grid-template-columns: minmax(auto, 373px) auto;
   align-items: center;
-  width: 100%;
   min-height: 77px;
   grid-gap: 9px 17px;
 }
@@ -87,13 +85,6 @@
   cursor: pointer;
 }
 
-/*Styles for screens smaller than 775px */
-@media screen and (max-width: 775px) {
-  .profile {
-    margin-top: 40px;
-  }
-}
-
 /* Styles for screens smaller than 480px */
 @media screen and (max-width: 480px) {
   .page__section {
@@ -107,6 +98,7 @@
     box-sizing: border-box;
   }
   .profile__image {
+    margin: 0;
   }
 
   .profile__info {
@@ -114,9 +106,7 @@
     grid-template-areas:
       "title button"
       "description description";
-    grid-template-columns: 1fr auto; /* Ensures title takes available space, button takes auto width */
     align-items: center; /* Vertically aligns items in the center */
-    /* width: 100%; */
     margin-top: 35px;
     width: 282px;
     height: 50px;
@@ -127,6 +117,7 @@
     line-height: 26.63px;
     font-weight: 400;
     margin-bottom: 14px;
+    margin-left: 43px;
     font-size: 22px;
     text-align: center;
   }
@@ -142,6 +133,8 @@
 
   .profile__edit-button {
     margin-top: 30px;
+    height: 18px;
+    width: 18px;
   }
 
   .profile__add-button {
